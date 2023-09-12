@@ -1,15 +1,23 @@
+body{
+    background-color: gray;
+}
 #img {
     width:90%;
     height: 25vh;
     border-radius: 8px;
     margin: 5% 0% 5% 5%;
+    object-fit: cover
+
 }
 .card {
     background-color: rgb(20, 37,61);
-    width: 18%;
+    width: 14%;
     height: 50vh, auto;
     border-radius: 8px;
 
+}
+.card:hover{
+    rotate: reverse;
 }
 .ptmeio {
     font-weight: 300;
