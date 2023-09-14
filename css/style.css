@@ -3,7 +3,7 @@ body{
 }
 #img {
     width:90%;
-    height: 25vh;
+    height: 30vh;
     border-radius: 8px;
     margin: 5% 0% 5% 5%;
     object-fit: cover
@@ -11,9 +11,10 @@ body{
 }
 .card {
     background-color: rgb(20, 37,61);
-    width: 14%;
-    height: 50vh, auto;
+    width: 85%;
+    height: 54vh;
     border-radius: 8px;
+    margin-bottom: 4%;
 
 }
 .card:hover{
@@ -37,25 +38,31 @@ p {
     color: rgb(112, 153, 210);
     font-size: 1.8vh;
 }
+.tile{
+    color: #FFF;
+    text-align: center;
+    font-size: 2.8rem;
+}
 #preco {
     color: rgb(38, 214, 164);
+    width: 10%;
 }
 #creation{
-    width: 130px;
+    width: 150px;
 }
 #creator {
     color: #FFF;
     text-align: justify;
 }
 #usuario {
-    width: 12%;
+    width: 18%;
     height: 2.5vh;
     margin-left: 8%;
     border-radius: 50%;
     border: 1.8px solid #fff;
 }
 #price {
-    width: 15%;
+    width: 18%;
     height: 2.5vh;
     margin-left: 5%;
 }
@@ -77,4 +84,10 @@ p {
 .meio1 {
     margin-left: 4%;
     width: 120px;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-area: auto;
+    margin: 1%;
 }

@@ -6,27 +6,178 @@
     <title>Portifolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src='/js/main.js'></script>
 </head>
 <body>
-    <div class="card">
-        <div class="ptcima">
-            <img id="img" src="data:image/jpeg;base64,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" alt="" />
-            <p >Nissan Gtr </p>
-            <p id="description">Nissan GTR Nismo R35 2016<p>
-        </div>
-        <div class="ptmeio">
-            <div class="meio1">
-                <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">0.041 ETH</p>
+    <h1 class="tile"> Venda de Serviços de Guardas, Comandante, Chefe e Soldados</h1>
+
+    <div class="section" >
+        <div class="card" class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card01.png" alt="" />
+                <p >Sanchez</p>
+                <p id="description">Soldado do Gren Viera<p>
             </div>
-            <div class="meio2">
-                <img id="imgdata" src="https://cdn-icons-png.flaticon.com/512/3773/3773652.png"/>
-                <p id="data" ">3 days left</p>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">0.241 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/550x/f1/0a/6d/f10a6d2d848a0a9c4d5e9550f29dcfa2.jpg"><p id="creation">Creation of : </p><p id="creator">Sanchez</p>
             </div>
         </div>
-        <div class="ptbaixo">
-            <img id="usuario" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg"><p id="creation">Creation of : </p><p id="creator">Felipe</p>
+    
+        <div class="card" class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card02.png" alt="" />
+                <p >Silva</p>
+                <p id="description">Soldado de Ali Bavaria<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">5.041 ETH</p>
+                </div>
+
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/originals/44/30/ba/4430ba81a9c39318975883c086697f23.jpg"><p id="creation">Creation of : </p><p id="creator">Silva</p>
+            </div>
         </div>
-    </div>
+    
+        <div class="card" class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card11.jpg" alt="" />
+                <p >Nardo</p>
+                <p id="description">Coronel de Mussin<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">8.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/564x/13/f0/d8/13f0d8b45a57769830cfd514af6fb006.jpg"><p id="creation">Creation of : </p><p id="creator">Nardo</p>
+            </div>
+        </div>
+    
+        <div class="card" class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card04.png" alt="" />
+                <p >Montes</p>
+                <p id="description">Comandante do reino de Polis<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">109.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/originals/d6/8e/39/d68e39fdcc5ec1c74b67890ddbc08bf9.jpg"><p id="creation">Creation of : </p><p id="creator">Montes</p>
+            </div>
+        </div>
+    
+
+        <div class="card" class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card05.jpg" alt="" />
+                <p >Siebra </p>
+                <p id="description">Chefe Real de Madrid</p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">50.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/originals/59/0a/49/590a4945706fc96b9235bd53656f56f6.jpg"><p id="creation">Creation of : </p><p id="creator">Siebra</p>
+            </div>
+        </div>
+    
+        <div class="card" class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card06.jpg" alt="" />
+                <p >Esteves </p>
+                <p id="description">Cabo de Del Rei<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">390.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/1200x/b9/f6/da/b9f6da46ed0be907836e1908593a04d3.jpg"><p id="creation">Creation of : </p><p id="creator">Esteves</p>
+            </div>
+        </div>
+    
+        <div class="card"class="animate__animated animate__flipInX">
+            <div class="ptcima">
+                <img id="img" src="/images/card07.jpg" alt="" />
+                <p >Panuciê</p>
+                <p id="description">Soldado de Trikrun<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">20.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/474x/ee/bd/2b/eebd2bb27353de7bda336df84613afdf.jpg"><p id="creation">Creation of : </p><p id="creator">Panuciê</p>
+            </div>
+        </div>
+    
+
+        <div class="card">
+            <div class="ptcima">
+                <img id="img" src="/images/card02.png" alt="" />
+                <p >Pavolini</p>
+                <p id="description">Comandante de Polis </p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">90.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/564x/40/5b/89/405b8979ea8b2f4dbb810cf55f2f325c.jpg"><p id="creation">Creation of : </p><p id="creator">Pavolini</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="ptcima">
+                <img id="img" src="/images/card09.jpg" alt="" />
+                <p >Brevê</p>
+                <p id="description">Chefe de Guarda de Gran Viera<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">690.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/736x/a1/cf/57/a1cf576fcb74ba4d00d1d46f85d29570.jpg"><p id="creation">Creation of : </p><p id="creator">Brevê </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="ptcima">
+                <img id="img" src="/images/card10.jpg" alt="" />
+                <p >Demarche</p>
+                <p id="description">Chefe de Guarda de Gran Bolevar<p>
+            </div>
+            <div class="ptmeio">
+                <div class="meio1">
+                    <img id="price" src="https://cdn-icons-png.flaticon.com/512/925/925014.png"/><p id="preco">60.041 ETH</p>
+                </div>
+            </div>
+            <div class="ptbaixo">
+                <img id="usuario" src="https://i.pinimg.com/1200x/b9/f6/da/b9f6da46ed0be907836e1908593a04d3.jpg"><p id="creation">Creation of : </p><p id="creator">Demarche</p>
+            </div>
+        </div>
+        
+
+</div>
 </body>
 </html>
