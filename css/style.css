@@ -91,3 +91,18 @@ p {
     grid-area: auto;
     margin: 1%;
 }
+
+.ImgLogo{
+    width: 100px;
+    border-radius: 10%;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: 0.2%;
+}
+#titleimg{
+    margin-left: 5%;   
+}
