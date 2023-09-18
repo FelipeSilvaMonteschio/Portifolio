@@ -6,4 +6,4 @@
 
 * utlizei alguns link de personagens de anime para criar o card de criacao de usuario
 
-* 
+
